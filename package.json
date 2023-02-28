@@ -1,0 +1,34 @@
+{
+  "name": "shm-starter-box",
+  "version": "1.0.0",
+  "description": "A sample Truffle project that allows developers to deploy to the Shardeum Blockchain",
+  "main": "truffle-config.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "truffle test",
+    "compile": "truffle compile",
+    "compile:shm": "truffle compile --config=truffle-config.shm.js",
+    "migrate":"truffle migrate",
+    "test:shmSphinx": "truffle test --config=truffle-config.shm.js --network shm_Sphinx",
+    "test:shmLiberty": "truffle test --config=truffle-config.shm.js --network shm_Liberty",
+    "migrate:shmSphinx": "truffle migrate --config=truffle-config.shm.js --network shm_Sphinx",
+    "migrate:shmLiberty": "truffle migrate --config=truffle-config.shm.js --network shm_Liberty"
+  },
+  "repository": {
+    
+  },
+  "keywords": [
+    "SHM",
+    "Shardeum Liberty",
+    "Shardeum Sphinx"
+  ],
+  "author": "",
+  "license": "MIT",
+    "devDependencies": {
+    "@truffle/hdwallet-provider": "^1.4.2",
+    "dotenv": "^9.0.0"
+  },
+  "dependencies": {}
+}
